@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Girasol">
+  <defs>
+    <radialGradient id="petalBack" cx="50%" cy="35%" r="80%">
+      <stop offset="0" stop-color="#ffe870"></stop>
+      <stop offset="0.6" stop-color="#ffc933"></stop>
+      <stop offset="1" stop-color="#f0a11f"></stop>
+    </radialGradient>
+    <radialGradient id="petalFront" cx="50%" cy="30%" r="85%">
+      <stop offset="0" stop-color="#fff59b"></stop>
+      <stop offset="0.55" stop-color="#ffd83d"></stop>
+      <stop offset="1" stop-color="#f3ad26"></stop>
+    </radialGradient>
+    <radialGradient id="centerOuter" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#6f4a28"></stop>
+      <stop offset="1" stop-color="#2f1f15"></stop>
+    </radialGradient>
+    <radialGradient id="centerInner" cx="45%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#8e6236" stop-opacity="0.85"></stop>
+      <stop offset="1" stop-color="#4f3422" stop-opacity="0.2"></stop>
+    </radialGradient>
+    <linearGradient id="stem" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#85c75c"></stop>
+      <stop offset="1" stop-color="#4b8d39"></stop>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#89cf60"></stop>
+      <stop offset="1" stop-color="#52963e"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Tallo y hojas detrás -->
+  <path d="M48 56 C49 66, 49 77, 48 88" fill="none" stroke="url(#stem)" stroke-width="5.2" stroke-linecap="round"></path>
+  <path d="M47 69 C37 62, 26 65, 24 75 C33 79, 42 78, 49 72 Z" fill="url(#leaf)"></path>
+  <path d="M49 76 C58 69, 68 71, 71 80 C62 84, 54 84, 47 78 Z" fill="url(#leaf)"></path>
+  <path d="M47 69 C40 70, 32 73, 27 77" fill="none" stroke="#4a843a" stroke-width="1.2" opacity="0.45"></path>
+  <path d="M49 76 C56 76, 63 79, 68 82" fill="none" stroke="#4a843a" stroke-width="1.2" opacity="0.45"></path>
+
+  <!-- Flor -->
+  <g transform="translate(48 43)">
+    <!-- pétalos de atrás -->
+    <g fill="url(#petalBack)">
+      <ellipse rx="7.2" ry="20" transform="rotate(0) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(22.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(45) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(67.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(90) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(112.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(135) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(157.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(180) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(202.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(225) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(247.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(270) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(292.5) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(315) translate(0 -18)"></ellipse>
+      <ellipse rx="7.2" ry="20" transform="rotate(337.5) translate(0 -18)"></ellipse>
+    </g>
+
+    <!-- pétalos de adelante -->
+    <g fill="url(#petalFront)">
+      <ellipse rx="6.4" ry="18" transform="rotate(11.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(33.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(56.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(78.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(101.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(123.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(146.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(168.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(191.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(213.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(236.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(258.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(281.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(303.75) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(326.25) translate(0 -17)"></ellipse>
+      <ellipse rx="6.4" ry="18" transform="rotate(348.75) translate(0 -17)"></ellipse>
+    </g>
+
+    <!-- centro -->
+    <circle r="15.5" fill="url(#centerOuter)"></circle>
+    <circle r="11.2" fill="url(#centerInner)"></circle>
+    <g fill="#a66d2f" opacity="0.9">
+      <circle cx="-6.5" cy="-5.2" r="1.1"></circle>
+      <circle cx="-1.8" cy="-7.7" r="1"></circle>
+      <circle cx="4.2" cy="-6.1" r="1.05"></circle>
+      <circle cx="7.2" cy="-1.3" r="0.95"></circle>
+      <circle cx="-8.3" cy="1.8" r="1"></circle>
+      <circle cx="-4.7" cy="4.9" r="1.05"></circle>
+      <circle cx="0.4" cy="3.1" r="1.15"></circle>
+      <circle cx="5.6" cy="4.6" r="1"></circle>
+      <circle cx="1.1" cy="8.1" r="0.95"></circle>
+      <circle cx="-2.8" cy="-1.2" r="0.85"></circle>
+    </g>
+  </g>
+</svg>
