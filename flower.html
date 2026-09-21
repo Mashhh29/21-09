@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1b2e">
+  <title>Tres girasoles para ti 🌻</title>
+  <link rel="icon" href="img/girasol.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="jardin">
+
+  <a class="volver" href="index.html">← Volver</a>
+
+  <main class="escena" id="escena">
+    <div class="luna" aria-hidden="true"></div>
+
+    <!-- EDITA ESTE TEXTO CUANDO QUIERAS -->
+    <p class="mensaje">
+      Tres girasoles que siempre miran hacia ti, como yo.
+    </p>
+
+    <div class="suelo" aria-hidden="true"></div>
+    <div class="pasto" id="pasto" aria-hidden="true"></div>
+
+    <!-- Girasol de la izquierda (abajo) -->
+    <div class="girasol" style="--x:22%; --bottom:4%; --cabeza:min(30vw,170px); --tallo:26svh; --d:0.35s; --z:2" data-girasol></div>
+
+    <!-- Girasol del centro (arriba) -->
+    <div class="girasol" style="--x:50%; --bottom:4%; --cabeza:min(38vw,215px); --tallo:44svh; --d:0s; --z:4" data-girasol></div>
+
+    <!-- Girasol de la derecha (abajo) -->
+    <div class="girasol" style="--x:78%; --bottom:4%; --cabeza:min(29vw,165px); --tallo:24svh; --d:0.6s; --z:2" data-girasol></div>
+
+    <div class="luciernagas" id="luciernagas" aria-hidden="true"></div>
+  </main>
+
+  <audio id="cancion" src="sound/ChristianBasso&HaienQiu-Flowers.mp3" loop preload="auto"></audio>
+  <button class="musica" id="musica" type="button" aria-label="Poner música">🎵</button>
+
+  <script src="main.js"></script>
+</body>
+</html>

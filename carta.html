@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1b2e">
+  <title>Una carta para ti 💌</title>
+  <link rel="icon" href="img/carta.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cielo" aria-hidden="true"></div>
+  <div class="estrellas" aria-hidden="true"></div>
+
+  <a class="volver" href="index.html">← Volver</a>
+
+  <main class="pagina-carta">
+    <div class="sobre-zona">
+      <button class="sobre" id="sobre" type="button" aria-expanded="false" aria-controls="carta">
+        <span class="sobre-cuerpo" aria-hidden="true"></span>
+        <span class="sobre-solapa" aria-hidden="true"></span>
+        <span class="sobre-sello" aria-hidden="true">💛</span>
+        <span class="sr-only">Abrir la carta</span>
+      </button>
+
+      <p class="sobre-pista" id="pista">Toca el sobre para abrirlo</p>
+
+      <!-- EDITA TODA LA CARTA DESDE AQUÍ -->
+      <article class="carta" id="carta">
+        <h1>Para ti</h1>
+        <p>Hoy es el día de las flores amarillas y yo no tenía cómo darte un campo entero, así que te hice este pedacito de internet que solo es tuyo.</p>
+        <p>Me gusta cómo te ríes de tus propios chistes, cómo te acuerdas de las cosas chiquitas y cómo todo se vuelve más fácil cuando estás. Si los girasoles giran buscando el sol, ya sabes hacia dónde giro yo.</p>
+        <p>Gracias por iluminar mis días con tu presencia.</p>
+        <p class="firma">Te quiero 💛</p>
+      </article>
+      <!-- FIN DE LA CARTA -->
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var sobre = document.getElementById("sobre");
+      var carta = document.getElementById("carta");
+      var pista = document.getElementById("pista");
+
+      sobre.addEventListener("click", function () {
+        var abierto = sobre.classList.toggle("abierto");
+        carta.classList.toggle("visible", abierto);
+        sobre.setAttribute("aria-expanded", abierto ? "true" : "false");
+        pista.textContent = abierto ? "Toca el sobre para cerrarlo" : "Toca el sobre para abrirlo";
+        if (abierto) {
+          setTimeout(function () {
+            carta.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 550);
+        }
+      });
+    })();
+  </script>
+
+  <style>
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>
